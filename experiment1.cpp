@@ -2,8 +2,7 @@
 using namespace std;
 
 int main(){
-    int age=26
-    ;
+    int age=26;
     cout << "My age is: "<< age;
     return 0;
 }
