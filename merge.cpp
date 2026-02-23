@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <chrono>
 using namespace std;
 
 // Merges two subarrays of arr[].
@@ -73,10 +74,16 @@ int main(){
     vector<int> arr = {38, 27, 43, 10, 40, 30, 20, 10};
     int n = arr.size();
 
+    auto start = chrono::high_resolution_clock::now();
     mergeSort(arr, 0, n - 1);
+    auto end = chrono::high_resolution_clock::now();
+
+    auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
+    
     for (int i = 0; i < arr.size(); i++)
         cout << arr[i] << " ";
     cout << endl;
+    cout << "Execution time: " << duration.count() << " microseconds" << endl;
     
     return 0;
 }
