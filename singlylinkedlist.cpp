@@ -42,10 +42,11 @@ class LinkedList {
 
 int main(){
     LinkedList listahan;
+    listahan.insert(80);
+    listahan.insert(100);
     listahan.insert(20);
     listahan.insert(40);
     listahan.insert(60);
-    listahan.insert(80);
-    listahan.insert(100);
+
     listahan.display();
 }

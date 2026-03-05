@@ -60,10 +60,10 @@ class DoublyList {
 
 int main(){
     DoublyList listahan;
+    listahan.backInsert(80);
+    listahan.backInsert(100);
     listahan.frontInsert(20);
     listahan.frontInsert(40);
     listahan.backInsert(60);
-    listahan.backInsert(80);
-    listahan.backInsert(100);
     listahan.display();
 }
